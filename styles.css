@@ -431,11 +431,12 @@ img { max-width: 100%; display: block; }
 .banner-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 55%);
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding: 16px;
+  pointer-events: none;
 }
 
 .banner-overlay p {
@@ -538,6 +539,7 @@ img { max-width: 100%; display: block; }
   padding: 30px;
   background: linear-gradient(180deg, #002868, #bf0a30);
   height: 220px !important;
+  box-sizing: border-box;
 }
 
 .squad-card figcaption {
@@ -935,8 +937,7 @@ img { max-width: 100%; display: block; }
 
   .meme-cutout { width: 120px; }
   .speech-bubble { font-size: 0.65rem; padding: 6px 10px; }
-  .bubble-left { right: -10px; top: -10px; }
-  .bubble-left { right: -20px; }
+  .bubble-left { right: -20px; top: -10px; }
   .bubble-right { left: -20px; bottom: 10px; }
 
   .squad-grid { grid-template-columns: 1fr; }
